@@ -1,0 +1,42 @@
+
+<header class="blog-header py-3 top-fixed ">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="text-muted" href="/dashboard">Ana Sayfa</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="text-muted">Hoş Geldin <%= name %></a>
+                <a class="btn btn-sm btn-info" href="/users/logout">Çıkış</a>
+            </div>
+            </div>
+</header>
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-white">
+    <div class="container" style=padding-top:50px;>
+    <table class="table table-hover  table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ad</th>
+                <th>E Mail</th>
+                <th>Kayıt Tarihi</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%for(var i=0;i<kullanicilar.length;i++){%>
+                <tr>
+                    <th><%=i+1%></th>
+                    <th><%=kullanicilar[i].name%></th>
+                    <th><%=kullanicilar[i].email%> </th>
+                    <th><%=kullanicilar[i].date.toUTCString()%></th>
+                    <th><a href="/dashboard/<%=kullanicilar[i]._id%>">sil</a></th>
+                    <th><a href="/dashboard/edit/<%=kullanicilar[i]._id%>">güncelle</a></th>
+                </tr>
+            <%}%>
+        </tbody>
+    </table>
+    </div>
+  </div>
+
+
+

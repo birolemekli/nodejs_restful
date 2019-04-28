@@ -1,0 +1,38 @@
+{
+  "name": "nodejs_crud_and_restful",
+  "version": "1.0.0",
+  "description": "Authentication",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Birol Emekli",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birolemekli/nodejs_restful.git"
+  },
+  "keywords": [
+    "nodejs",
+    "restful",
+    "ejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/birolemekli/nodejs_restful/issues"
+  },
+  "homepage": "https://github.com/birolemekli/nodejs_restful#readme"
+}
