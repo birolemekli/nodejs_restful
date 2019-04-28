@@ -20,3 +20,7 @@
   ```bash
     npm start
   ```
+  
+  
+6) Api.js in restful request format
+
